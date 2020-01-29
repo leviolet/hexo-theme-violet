@@ -8,21 +8,20 @@ excerpt_link: More
 prev: Prev
 next: Next
 reply: Reply
-share: Share
+share: 
 fancybox: true
 
 # Sidebar
 widgets:
-- search
-- music
 - category
 - recent_posts
 - tag
-- tagcloud
+#- tagcloud
+#- search
+#- music
 
 # Miscellaneous
 google_analytics:
-duoshuo_shortname: 
 rss: 
 google_site_verification: 
 baidu_site_verification: 

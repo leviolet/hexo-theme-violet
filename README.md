@@ -1,19 +1,20 @@
-# Hexo Theme: CyanStyle
+# Hexo 主题: AquaStyle
 
-CyanStyle 是 Wordpress 的 Twentytwelve 主题在 Hexo 上的迁移。
+AquaStyle 是基于 CyanStyle 定制的 Hexo 主题.  
+CyanStyle 是 Wordpress 的 Twentytwelve 主题在 Hexo 上的迁移.  
 
 ## 安装
 
 ```
-git clone https://github.com/wizardforcel/hexo-theme-cyanstyle.git themes/cyanstyle
+git clone https://github.com/leviolet/hexo-theme-aquastyle.git themes/aquastyle
 ```
 
-修改 Hexo 的 `_config.yml` 中的 `theme` 为 `cyanstyle`。
+修改 Hexo 的 `_config.yml` 中的 `theme` 为 `aquastyle`.
 
 ## 升级
 
 ```
-cd themes/cyanstyle
+cd themes/aquastyle
 git pull
 ```
 
