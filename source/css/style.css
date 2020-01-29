@@ -1,18 +1,19 @@
 /*
 Modified by hexo-theme-auqastyle
 
-Theme Name: Cyan Style
-Theme URI: https://github.com/wizardforcel/hexo-theme-cyanstyle
+Theme Name: auqa Style
+Theme URI: https://github.com/leviolet/hexo-theme-auqastyle
 Author: the WordPress team
 Author URI: http://wordpress.org/
 Secondary Developer: Flygon
 Secondary Developer URI: http://flygon.net/
+Third Developer: Leviolet
 Description: Inspired by Wordpress theme Twentytwelve.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, two_column, chinese, wordpress, light
-Text Domain: hexo-theme-cyanstyle
+Text Domain: hexo-theme-auqastyle
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -225,7 +226,7 @@ img {
 	line-height: 2.181818182;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: rgb(81, 165, 168); /* Widget Title */
+	color: rgb(160, 255, 255); /* Widget Title */
 }
 
 /* Shared Post Format styling */
@@ -326,7 +327,7 @@ button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-	color: #757575;
+	color: #dddddd;
 	background-color: #e1e1e1;
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top, #ebebeb, #e1e1e1);
@@ -410,7 +411,7 @@ img.wp-post-image {
 	font-size: 12px;
 	font-size: 0.857142857rem;
 	line-height: 2;
-	color: #757575;
+	color: #dddddd;
 }
 img.wp-smiley,
 .rsswidget img {
@@ -471,7 +472,7 @@ img.wp-smiley,
   height: 2ex;
 }
 #pagination a {
-  color: #999;
+  color: #ddd;
   text-decoration: none;
 }
 #pagination a:hover {
@@ -545,7 +546,7 @@ img.wp-smiley,
 	overflow: hidden;
 }
 .author-description p {
-	color: #757575;
+	color: #dddddd;
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
@@ -572,7 +573,7 @@ body {
 	font-size: 1rem;
 	font-family: Microsoft YaHei,  Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
-	color: rgb(0, 0, 0); /*Article & Widget Content*/
+	color: #fff; /*Article & Widget Content*/
 }
 body.custom-font-enabled {
 	font-family: Microsoft YaHei,  Helvetica, Arial, sans-serif;
@@ -580,11 +581,11 @@ body.custom-font-enabled {
 }
 a {
 	outline: none;
-	color: rgb(81, 165, 168); /*Article Title Normal*/
+	color: rgb(160, 255, 255); /*Article Title Normal*/
     text-decoration: none;
 }
 a:hover {
-	color: rgb(0, 0, 0); /*Article Title Hover*/
+	color: rgb(255, 255, 255); /*Article Title Hover*/
     text-decoration: underline;
 }
 
@@ -609,7 +610,7 @@ a:hover {
 
 /* Achive */
 .archive-year-wrap {
-    color: rgb(81, 165, 168);
+    color: rgb(125, 164, 165);
     font-weight: normal;
     margin-bottom: 30px;
     text-shadow: 0 0 1px #fff;
@@ -666,7 +667,7 @@ a:hover {
 
 .site-header h1 a,
 .site-header h2 a {
-	color: #515151;
+	color: #dddddd;
 	display: inline-block;
 	text-decoration: none;
 }
@@ -707,7 +708,7 @@ a:hover {
 	line-height: 1.42857143;
 }
 .main-navigation a {
-	color: #5e5e5e;
+	color: #dddddd;
 }
 .main-navigation a:hover {
 	color: #21759b;
@@ -761,10 +762,10 @@ section[role="banner"] {
 	margin-left: 2.571428571rem;
 }
 .widget-area .widget a {
-	color: rgb(0, 0, 0); /* Widget Link Normal*/
+	color: #dddddd; /* Widget Link Normal*/
 }
 .widget-area .widget a:hover {
-	color: rgb(81, 165, 168); /* Widget Link Hover*/
+	color: rgb(160, 255, 255); /* Widget Link Hover*/
 }
 
 }
@@ -789,7 +790,7 @@ footer[role="contentinfo"] {
 	padding: 1.714285714rem 0;
 }
 footer[role="contentinfo"] a {
-	color: #686868;
+	color: #dddddd;
 }
 footer[role="contentinfo"] a:hover {
 	color: #21759b;
@@ -852,22 +853,22 @@ footer[role="contentinfo"] a:hover {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
-	color: #757575;
+	color: #dddddd;
 }
 .comments-link a,
 .entry-meta a {
-	color: rgb(88, 88, 88); /*Article Meta Link Normal*/
+	color: #dddddd; /*Article Meta Link Normal*/
 }
 .comments-link a:hover,
 .entry-meta a:hover {
-	color: rgb(81, 165, 168); /*Article Meta Link Hover*/
+	color: rgb(160, 255, 255); /*Article Meta Link Hover*/
 }
 
 article.sticky .featured-post {
     /* Border Line for Special */
-	border-top: 1px solid rgba(0, 0, 0, 0.24);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
-	color: #757575;
+	border-top: 1px solid rgba(255, 255, 255, 255.24);
+	border-bottom: 1px solid rgba(255, 255, 255, 255.24);
+	color: #ccc;
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 3.692307692;
@@ -879,6 +880,7 @@ article.sticky .featured-post {
 .entry-summary,
 .mu_register {
 	line-height: 1.714285714;
+	color: #ccc;
 }
 .entry-content h1,
 .comment-content h1,
@@ -944,12 +946,12 @@ article.sticky .featured-post {
 
 .entry-content a,
 .comment-content a {
-	color: rgb(81, 165, 168); /* Link in Article Content Normal */
+	color: rgb(160, 255, 255); /* Link in Article Content Normal */
 }
 
 .entry-content a:Hover,
 .comment-content a:Hover{
-	color: rgb(0, 0, 0); /* Link in Article Content Hover */
+	color: rgb(255, 255, 255); /* Link in Article Content Hover */
 }
 
 .entry-content ol,
@@ -990,9 +992,9 @@ article.sticky .featured-post {
 .comment-content blockquote {
     margin: 0 0 24px;
     margin: 0 0 1.714285714rem;
-    border-left: 4px solid #aaa;
+    border-left: 4px solid #ddd;
     padding: 0 15px;
-    color: #aaa;
+    color: #ddd;
 }
 .entry-content blockquote>:first-child,
 .comment-content blockquote>:first-child {
@@ -1091,7 +1093,7 @@ img.aligncenter,
 .entry-content table,
 .comment-content table {
 	border-bottom: 1px solid #ededed;
-	color: #757575;
+	color: #dddddd;
 	font-size: 12px;
 	font-size: 0.857142857rem;
 	line-height: 2;
@@ -1113,7 +1115,7 @@ img.aligncenter,
 }
 .site-content article {
     /* Border Line for Article Bottom*/
-	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+	border-bottom: 1px solid rgba(255, 255, 255, 255.24);
 	margin-bottom: 72px;
 	margin-bottom: 5.142857143rem;
 	padding-bottom: 24px;
@@ -1133,19 +1135,19 @@ footer.entry-meta {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
-	color: #757575; /* Article Meta */
+	color: #dddddd; /* Article Meta */
 }
 .single-author .entry-meta .by-author {
 	display: none;
 }
 .mu_register h2 {
-	color: #757575;
+	color: #dddddd;
 	font-weight: normal;
 }
 
 /* Hexo Code */
 figure.highlight {
-    border: 1px solid rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.24);
     margin-bottom: 15px;
     padding: 7px 15px;
     -webkit-border-radius: 2px;
@@ -1169,16 +1171,16 @@ figure.highlight td {
 }
 
 figure.highlight .gutter {
-    color: #999;
+    color: #ddd;
     padding-right: 15px;
-    border-right: 1px solid rgba(0, 0, 0, 0.24);
+    border-right: 1px solid rgba(255, 255, 255, 0.24);
     text-align: right;
     vertical-align: middle;
 }
 
 figure.highlight .code {
     padding-left: 15px;
-    border-left: 1px solid rgba(0, 0, 0, 0.24);
+    border-left: 1px solid rgba(255, 255, 255, 0.24);
 }
 
 figure.highlight pre {
@@ -1208,7 +1210,7 @@ figure.highlight .line {
 	border-bottom: 1px solid #ededed;
 }
 .archive-meta {
-	color: #757575;
+	color: #dddddd;
 	font-size: 12px;
 	font-size: 0.857142857rem;
 	line-height: 2;
@@ -1250,10 +1252,10 @@ article.format-aside h1 {
 }
 article.format-aside h1 a {
 	text-decoration: none;
-	color: #4d525a;
+	color: #ddd;
 }
 article.format-aside h1 a:hover {
-	color: #2e3542;
+	color: #ddd;
 }
 article.format-aside .aside {
 	padding: 24px 24px 0;
@@ -1265,7 +1267,7 @@ article.format-aside p {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
-	color: #4a5466;
+	color: #ddd;
 }
 article.format-aside blockquote:last-child,
 article.format-aside p:last-child {
@@ -1304,7 +1306,7 @@ article.format-link header {
 	font-weight: bold;
 	font-style: italic;
 	text-transform: uppercase;
-	color: #848484;
+	color: #ddd;
 	background-color: #ebebeb;
 	border-radius: 3px;
 }
@@ -1333,7 +1335,7 @@ article.format-quote .entry-content blockquote {
 	font-size: 1.071428571rem;
 	line-height: 1.6;
 	font-style: normal;
-	color: #6a6a6a;
+	color: #ddd;
 	background: #efefef;
 }
 
@@ -1360,7 +1362,7 @@ article.format-quote .entry-content blockquote {
 	margin: 0;
 }
 .format-status .entry-header header a {
-	color: #757575;
+	color: #dddddd;
 }
 .format-status .entry-header header a:hover {
 	color: #21759b;
@@ -1428,7 +1430,7 @@ article.format-quote .entry-content blockquote {
 	color: #21759b;
 }
 .comments-area article header cite a {
-	color: #444;
+	color: #ddd;
 }
 .comments-area article header cite a:hover {
 	text-decoration: underline;
@@ -1467,7 +1469,7 @@ article.format-quote .entry-content blockquote {
 }
 a.comment-reply-link,
 a.comment-edit-link {
-	color: #686868;
+	color: #ddd;
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
@@ -1531,7 +1533,7 @@ a.comment-edit-link:hover {
 	font-size: 12px;
 	font-size: 0.857142857rem;
 	line-height: 2;
-	color: #5e5e5e;
+	color: #ddd;
 }
 .required {
 	color: red;
@@ -1567,7 +1569,7 @@ a.comment-edit-link:hover {
 	list-style-position: inside;
 }
 .template-front-page .widget-area .widget li a {
-	color: #757575;
+	color: #dddddd;
 }
 .template-front-page .widget-area .widget li a:hover {
 	color: #21759b;
@@ -1592,7 +1594,7 @@ a.comment-edit-link:hover {
 }
 .widget_recent_entries .post-date,
 .widget_rss .rss-date {
-	color: #aaa;
+	color: #ddd;
 	font-size: 11px;
 	font-size: 0.785714286rem;
 	margin-left: 12px;
@@ -1604,7 +1606,7 @@ a.comment-edit-link:hover {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
-	color: #686868;
+	color: #ddd;
 }
 #wp-calendar th,
 #wp-calendar td,
@@ -1639,7 +1641,7 @@ a.comment-edit-link:hover {
 /* List count */
 .category-list-count, .tag-list-count, .archive-list-count {
     padding-left: 5px;
-    color: #999;
+    color: #ddd;
     font-size: 0.85em;
 }
 .category-list-count:before, .tag-list-count:before, .archive-list-count:before {
@@ -1705,8 +1707,8 @@ img#wpstats {
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
 	    /* Border Line for Main */
-		border-bottom: 1px solid rgba(0, 0, 0, 0.24);
-		border-top: 1px solid rgba(0, 0, 0, 0.24);
+		border-bottom: 1px solid rgba(255, 0, 255, 0.6);
+		border-top: 1px solid rgba(0, 255, 255, 0.6);
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
@@ -1722,10 +1724,12 @@ img#wpstats {
 	}
 	.main-navigation li a {
 		border-bottom: 0;
-		color: #6a6a6a;
-		line-height: 3.692307692;
+		color: #fff;
+		line-height: 3.5;
 		text-transform: uppercase;
+		font-style: normal;
 		white-space: nowrap;
+		font-weight: bolder;
 	}
 	.main-navigation li a:hover {
 		color: #000;
@@ -1766,7 +1770,7 @@ img#wpstats {
 	}
 	.main-navigation li ul li a:hover {
 		background: #e3e3e3;
-		color: #444;
+		color: #ddd;
 	}
 	.main-navigation .current-menu-item > a,
 	.main-navigation .current-menu-ancestor > a,
@@ -1945,7 +1949,7 @@ img#wpstats {
 	}
 	footer.entry-meta,
 	footer.entry-meta a {
-		color: #444;
+		color: #ddd;
 		font-size: 10pt;
 	}
 	.author-description {
@@ -1970,4 +1974,8 @@ img#wpstats {
 		margin-left: 50px;
 		margin-left: 3.57142857rem;
 	}
+}
+
+.menu-item-object-page a {
+	color: #fff;
 }
