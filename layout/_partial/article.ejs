@@ -6,9 +6,6 @@
         <%- partial('post/title', {class_name: 'article-title'}) %>
         <% } %>
         <div class="comments-link">
-            <% if (post.comments && theme.duoshuo_shortname){ %>
-            <a href="<%- url_for(post.path) %>#comments" class="leave-reply"><%= theme.reply %></a>
-            <% } %>
             <a href="javascript:void(0);" data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="leave-reply bdsharebuttonbox" data-cmd="more"><%= theme.share %></a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
@@ -18,7 +15,7 @@
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
           <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more" class="more-link"><%= theme.excerpt_link %> <span class="meta-nav">→</span></a>
+            <a href="<%- url_for(post.path) %>#more" class="more-link"><%= theme.excerpt_link %></span></a>
           </p>
         <% } %>
       <% } else { %>

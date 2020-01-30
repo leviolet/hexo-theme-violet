@@ -1,10 +1,11 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  主页: /
+  归档: /archives
+  关于: /about
 
 # Content
-excerpt_link: More
+excerpt_link: 
 prev: Prev
 next: Next
 reply: Reply
@@ -13,6 +14,7 @@ fancybox: true
 
 # Sidebar
 widgets:
+- user_widgets
 - category
 - recent_posts
 - tag
@@ -27,3 +29,6 @@ google_site_verification:
 baidu_site_verification: 
 favicon: 
 music: 
+
+user_widgets:
+  音乐: <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1395034165&auto=0&height=32"></iframe>
