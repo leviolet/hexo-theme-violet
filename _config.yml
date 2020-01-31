@@ -1,14 +1,20 @@
+aquastyle:
+    version: v0.1
+    cyanstyle: 
+        author: wizardforcel
+        version: commit-d37a18d
+
 # Header
 menu:
-  主页: /
-  归档: /archives
-  关于: /about
+    主页: /
+    归档: /archives
+    关于: /about.html
 
 # Content
-excerpt_link: 
-prev: Prev
-next: Next
-reply: Reply
+excerpt_link:
+prev: 上一页
+next: 下一页
+reply: 评论
 share: 
 fancybox: true
 
@@ -21,14 +27,20 @@ widgets:
 #- tagcloud
 #- search
 #- music
+user_widgets:
+    Music: <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1395034165&auto=0&height=32"></iframe>
+    Social: |
+        <a href="https://github.com/leviolet">Github</a><br/>
 
 # Miscellaneous
 google_analytics:
-rss: 
-google_site_verification: 
-baidu_site_verification: 
-favicon: 
-music: 
-
-user_widgets:
-  音乐: <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1395034165&auto=0&height=32"></iframe>
+rss:
+google_site_verification:
+baidu_site_verification:
+favicon: /asset/favicon.png
+music:
+footer_info: |
+    © 2020 Leviolet All rights reserved.<br/>
+    Powered By: Hexo CyanStyle.<br/>
+    Theme: AquaStyle v0.1
+    
