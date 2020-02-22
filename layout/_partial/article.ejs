@@ -1,0 +1,47 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="<%= post.layout %>-<%= post.slug %> post type-post status-publish format-standard hentry">
+    <!--<%- partial('post/gallery') %>-->
+
+      <header class="entry-header">
+        <% if (post.link || post.title){ %>
+        <%- partial('post/title', {class_name: 'article-title'}) %>
+        <% } %>
+      </header><!-- .entry-header -->
+
+    
+      <% if (post.excerpt && index){ %>
+        <div class="entry-content">
+          <%- post.excerpt %>
+        </div>
+        <% if (theme.excerpt_link){ %>
+          <div class="entry-content">
+          <p class="article-more-link">
+            <a href="<%- url_for(post.path) %>#more" class="more-link"><%= theme.excerpt_link %></span></a>
+          </p>
+        </div>
+        <% } %>
+      <% } else { %>
+        <div class="entry-content">
+          <%- post.content %>
+        </div>
+      <% } %>
+    
+    <% if(post.layout==="post"){ %>
+      <footer class="entry-meta">
+
+      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+      <%- partial('post/category') %>
+      <%- partial('post/tag') %>
+      <% if(theme.share) { %>
+        <div class="comments-link">
+          <a href="javascript:void(0);" data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="leave-reply bdsharebuttonbox" data-cmd="more"><%= theme.share %></a>
+        </div><!-- .comments-link -->
+      <% } %>
+      </footer>
+    <% } %>
+</article>
+
+<% if (!index){ %>
+    <%- partial('post/nav') %>
+<% } %>
+
+<%- partial('comment') %>

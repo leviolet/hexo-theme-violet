@@ -1,0 +1,9 @@
+<% if (theme.user_widgets){ %>
+    <% for(i in theme.user_widgets){ %>
+    <aside class="widget">
+      <h3 class="widget-title"><%- i %></h3>
+      <div class="widget-content">
+        <%- theme.user_widgets[i] %>
+      </div>
+    </aside>
+  <% }} %>

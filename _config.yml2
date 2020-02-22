@@ -1,0 +1,36 @@
+violetstyle:
+    author: leviolet
+    license: GPL-V3+
+    based_on: cyanstyle@commit-d37a18d,by wizardforcel,under GPL-V3+
+
+# Header
+menu:
+    主页: /
+    归档: /archives
+
+# Content
+excerpt_link:
+prev: 上一页
+next: 下一页
+reply: 评论
+share: 
+fancybox: true
+
+# Sidebar
+widgets:
+- category
+- recent_posts
+- tag
+#- tagcloud
+#- search
+#- music
+
+# Miscellaneous
+google_analytics:
+rss:
+google_site_verification:
+baidu_site_verification:
+favicon: 
+music:
+
+scheme: 

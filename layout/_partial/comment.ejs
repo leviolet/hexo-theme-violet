@@ -1,0 +1,14 @@
+<% if (!index && !post.disable_comments){ %>
+        <% if(theme.utteranc) { %>
+            <section id="comments">
+                <script src= "<%- theme.utteranc.src %>"
+                    repo= "<%- theme.utteranc.repo %>"
+                    issue-term= "<%- theme.utteranc.issue_term %>"
+                    label= "<%- theme.utteranc.label %>"
+                    theme= "<%- theme.utteranc.theme %>"
+                    crossorigin= "<%- theme.utteranc.crossorigin %>"
+                    async>
+                </script>
+            <% } %>
+</section>
+<% } %>
