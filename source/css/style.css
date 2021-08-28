@@ -1,8 +1,8 @@
 /*
-Modified by hexo-theme-auqastyle
+Modified by hexo-theme-violetstyle
 
-Theme Name: auqa Style
-Theme URI: https://github.com/leviolet/hexo-theme-auqastyle
+Theme Name: Violet Style
+Theme URI: https://github.com/leviolet/hexo-theme-violetstyle
 Author: the WordPress team
 Author URI: http://wordpress.org/
 Secondary Developer: Flygon
@@ -13,7 +13,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive, two_column, chinese, wordpress, light
-Text Domain: hexo-theme-auqastyle
+Text Domain: hexo-theme-violetstyle
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -232,7 +232,7 @@ img {
 	line-height: 2.181818182;
 	font-weight: bolder;
 	text-transform: uppercase;
-	color: rgb(138,43,226); /* Widget Title */
+	color: rgb(79,130,181); /* Widget Title */
 }
 
 /* Shared Post Format styling */
@@ -463,7 +463,7 @@ img.wp-smiley,
   border-radius: 2px;
   text-align: center;
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 #pagination:before,
 #pagination:after {
@@ -593,7 +593,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-	color: rgb(138,43,226); /*Article Title Hover*/
+	color: rgb(79,130,181); /*Article Title Hover*/
 	text-decoration: none;
 	font-weight: inherit;
 }
@@ -619,7 +619,7 @@ a:hover {
 
 /* Achive */
 .archive-year-wrap {
-    color: rgb(138,43,226);
+    color: rgb(79,130,181);
     font-weight: normal;
     margin-bottom: 30px;
     text-shadow: 0 0 1px #fff;
@@ -653,8 +653,9 @@ a:hover {
 .site {
 	padding: 0 24px;
 	padding: 0 1.714285714rem;
-	background-color: rgba(255, 255, 255, 0.75); /* Main Page */
+	background-color: rgba(255, 255, 255, 0.7); /* Main Page */
 }
+
 .site-content {
 	margin: 24px 0 0;
 	margin: 1.714285714rem 0 0;
@@ -676,7 +677,7 @@ a:hover {
 
 .site-header h1 a,
 .site-header h2 a {
-	color: #515151;
+	color: black;
 	display: inline-block;
 	text-decoration: none;
 }
@@ -774,7 +775,7 @@ section[role="banner"] {
 	color: rgb(0, 0, 0); /* Widget Link Normal*/
 }
 .widget-area .widget a:hover {
-	color: rgb(138,43,226); /* Widget Link Hover*/
+	color: rgb(79,130,181); /* Widget Link Hover*/
 }
 
 .widget-area #s {
@@ -783,7 +784,7 @@ section[role="banner"] {
 
 /* Footer */
 footer[role="contentinfo"] {
-	border-top: 1px solid rgba(0, 0, 0, 0.24);
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
 	clear: both;
 	font-size: 12px;
 	font-size: 0.857142857rem;
@@ -869,13 +870,13 @@ footer[role="contentinfo"] a:hover {
 }
 .comments-link a:hover,
 .entry-meta a:hover {
-	color: rgb(138,43,226); /*Article Meta Link Hover*/
+	color: rgb(79,130,181); /*Article Meta Link Hover*/
 }
 
 article.sticky .featured-post {
     /* Border Line for Special */
-	border-top: 1px solid rgba(0, 0, 0, 0.24);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	color: #010101;
 	font-size: 13px;
 	font-size: 0.928571429rem;
@@ -953,7 +954,7 @@ article.sticky .featured-post {
 
 .entry-content a,
 .comment-content a {
-	color: rgb(138,43,226); /* Link in Article Content Normal */
+	color: rgb(79,130,181); /* Link in Article Content Normal */
 }
 
 .entry-content a:Hover,
@@ -1014,17 +1015,17 @@ article.sticky .featured-post {
 }
 .entry-content code,
 .comment-content code {
-    font-family: Consolas, Monaco, Lucida Console, monospace;
+    font-family: Consolas, Monaco, Lucida Console, 楷体 , monospace;
     padding: 0 5px;
     margin: 0 2px;
-    font-size: 0.9em;
-    border: 1px solid rgba(0, 0, 0, 0.24);
+    font-size: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 3px;
     border-radius: 3px;
 }
 .entry-content pre,
 .comment-content pre {
-    border: 1px solid rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     font-family: Consolas, Monaco, Lucida Console, monospace;
     margin-bottom: 15px;
     overflow: auto;
@@ -1123,7 +1124,7 @@ img.aligncenter,
 }
 .site-content article {
     /* Border Line for Article Bottom*/
-	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	margin-bottom: 72px;
 	margin-bottom: 5.142857143rem;
 	padding-bottom: 24px;
@@ -1155,7 +1156,7 @@ footer.entry-meta {
 
 /* Hexo Code */
 figure.highlight {
-    border: 1px solid rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
     padding: 7px 15px;
     -webkit-border-radius: 2px;
@@ -1181,14 +1182,14 @@ figure.highlight td {
 figure.highlight .gutter {
     color: #999;
     padding-right: 15px;
-    border-right: 1px solid rgba(0, 0, 0, 0.24);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
     text-align: right;
     vertical-align: middle;
 }
 
 figure.highlight .code {
     padding-left: 15px;
-    border-left: 1px solid rgba(0, 0, 0, 0.24);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 figure.highlight pre {
@@ -1707,16 +1708,16 @@ img#wpstats {
 		text-align: left;
 	}
 	.site-header h1 {
-		font-size: 26px;
-		font-size: 1.857142857rem;
+		font-size: 32px;
+		font-size: 2.4rem;
 		line-height: 1.846153846;
 		margin-bottom: 0;
 	}
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
 	    /* Border Line for Main */
-		border-bottom: 1px solid rgba(0, 0, 0, 0.24);
-		border-top: 1px solid rgba(0, 0, 0, 0.24);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+		border-top: 1px solid rgba(0, 0, 0, 0.5);
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
@@ -1776,7 +1777,7 @@ img#wpstats {
 		white-space: normal;
 	}
 	.main-navigation li ul li a:hover {
-		background: #e3e3e3;
+		background: #a3e3e3;
 		color: #444;
 	}
 	.main-navigation .current-menu-item > a,
@@ -1853,6 +1854,7 @@ img#wpstats {
 		margin-bottom: 48px;
 		margin-bottom: 3.428571429rem;
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
+		border-radius: 5px;
 	}
 	body.custom-background-empty {
 		background-color: #fff;
@@ -1982,3 +1984,15 @@ img#wpstats {
 		margin-left: 3.57142857rem;
 	}
 }
+
+/* Code Highlight Theme - Solarized-light */
+.hljs{display:block;overflow-x:auto;padding:0.5em;color:#657b83;-webkit-text-size-adjust:none}
+.hljs-comment,.diff .hljs-header,.hljs-doctype,.hljs-pi,.lisp .hljs-string{color:#93a1a1}
+.hljs-keyword,.hljs-winutils,.method,.hljs-addition,.css .hljs-tag,.hljs-request,.hljs-status,.nginx .hljs-title{color:#859900}
+.hljs-number,.hljs-command,.hljs-string,.hljs-tag .hljs-value,.hljs-rule .hljs-value,.hljs-doctag,.tex .hljs-formula,.hljs-regexp,.hljs-hexcolor,.hljs-link_url{color:#2aa198}
+.hljs-title,.hljs-localvars,.hljs-chunk,.hljs-decorator,.hljs-built_in,.hljs-identifier,.vhdl .hljs-literal,.hljs-id,.css .hljs-function,.hljs-name{color:#268bd2}
+.hljs-attribute,.hljs-variable,.lisp .hljs-body,.smalltalk .hljs-number,.hljs-constant,.hljs-class .hljs-title,.hljs-parent,.hljs-type,.hljs-link_reference{color:#b58900}
+.hljs-preprocessor,.hljs-preprocessor .hljs-keyword,.hljs-pragma,.hljs-shebang,.hljs-symbol,.hljs-symbol .hljs-string,.diff .hljs-change,.hljs-special,.hljs-attr_selector,.hljs-subst,.hljs-cdata,.css .hljs-pseudo,.hljs-header{color:#cb4b16}
+.hljs-deletion,.hljs-important{color:#dc322f}
+.hljs-link_label{color:#6c71c4}
+.tex .hljs-formula{background:#eee8d5}

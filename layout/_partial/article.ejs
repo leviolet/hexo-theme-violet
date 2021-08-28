@@ -8,9 +8,9 @@
       </header><!-- .entry-header -->
 
     
-      <% if (post.excerpt && index){ %>
+      <% if (index){ %>
         <div class="entry-content">
-          <%- post.excerpt %>
+          <%- post.excerpt || theme.dafult_excerpt || "No description" %>
         </div>
         <% if (theme.excerpt_link){ %>
           <div class="entry-content">

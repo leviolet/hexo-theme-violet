@@ -3,7 +3,7 @@
     <aside class="widget">
       <h3 class="widget-title"><%- i %></h3>
       <div class="widget-content">
-        <%- theme.user_widgets[i] %>
+        <%- markdown(theme.user_widgets[i]) %>
       </div>
     </aside>
   <% }} %>

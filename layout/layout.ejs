@@ -1,13 +1,49 @@
 <%- partial('_partial/head') %>
+
 <body class="home blog custom-background custom-font-enabled single-author">
   <div id="page" class="hfeed site">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main"><%- body %></div></div>
-        <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    <%- partial('_partial/header', null, false) //{cache: !config.relative_link}->false  %>
+    <div id="main" class="wrapper">
+      <div id="primary" class="site-content">
+        <div id="content" role="main"><%- body %></div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     <%- partial('_partial/after-footer') %>
   </div>
+
+  <% // 光标动画支持 %>
+  <% if(theme.cursor.enable?true:page.enable_cursor){ %>
+  <div id="mycursor">
+    <div id="topLeft">
+      <%- theme.cursor.top_left %>
+    </div>
+    <div id="topRight">
+      <%- theme.cursor.top_right %>
+    </div>
+    <div id="bottomLeft">
+      <%- theme.cursor.bottom_left %>
+    </div>
+    <div id="bottomRight">
+      <%- theme.cursor.bottom_right %>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var obj = document.getElementById("mycursor");
+    document.onmousemove = function (event) {
+      event = event || window.event;
+      var pageY = event.pageY || scroll().top + event.clientY;
+      var pageX = event.pageX || scroll().left + event.clientX;
+      targetY = pageY;
+      targetX = pageX;
+      obj.style.left = - obj.offsetWidth / 2 + pageX + "px";
+      obj.style.top = - obj.offsetHeight / 2 + pageY + "px";
+    };
+  </script>
+  <% } %>
+  <% // 光标动画支持 结束 %>
+
 </body>
+
 </html>
