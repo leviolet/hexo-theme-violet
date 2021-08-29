@@ -142,6 +142,7 @@ html {
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 a:focus {
 	outline: thin dotted;
@@ -741,6 +742,7 @@ section[role="banner"] {
 /* Sidebar */
 .widget-area .widget {
 	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
 	margin-bottom: 48px;
@@ -1131,6 +1133,7 @@ img.aligncenter,
 	padding-bottom: 1.714285714rem;
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
 }
@@ -1986,7 +1989,7 @@ img#wpstats {
 }
 
 /* Code Highlight Theme - Solarized-light */
-.hljs{display:block;overflow-x:auto;padding:0.5em;color:#657b83;-webkit-text-size-adjust:none}
+.hljs{display:block;overflow-x:auto;padding:0.5em;color:#657b83;-webkit-text-size-adjust:none;text-size-adjust:none;}
 .hljs-comment,.diff .hljs-header,.hljs-doctype,.hljs-pi,.lisp .hljs-string{color:#93a1a1}
 .hljs-keyword,.hljs-winutils,.method,.hljs-addition,.css .hljs-tag,.hljs-request,.hljs-status,.nginx .hljs-title{color:#859900}
 .hljs-number,.hljs-command,.hljs-string,.hljs-tag .hljs-value,.hljs-rule .hljs-value,.hljs-doctag,.tex .hljs-formula,.hljs-regexp,.hljs-hexcolor,.hljs-link_url{color:#2aa198}
