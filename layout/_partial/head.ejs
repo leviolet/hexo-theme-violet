@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= config.language %>">
 <head>
   <meta charset="utf-8">
   <% if (page.description){ %>
@@ -56,7 +56,7 @@
   <!-- <script src='//push.zhanzhang.baidu.com/push.js'></script> -->
   <!-- PWA manifest支持 -->
   <% if(theme.pwa) { %>
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials">
   <% } %>
   <% if(theme.scheme) { %>
     <%- css(theme.scheme) %>
