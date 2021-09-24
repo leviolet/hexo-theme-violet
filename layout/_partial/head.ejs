@@ -18,9 +18,7 @@
   <meta name="keywords" content="<%= config.keywords %>" />
   <% } %>
   
-  <% if (theme.google_site_verification){ %><meta name="google-site-verification" content="<%= theme.google_site_verification%>" /><% } %>
-  <% if (theme.baidu_site_verification){ %><meta name="baidu-site-verification" content="<%= theme.baidu_site_verification%>" /><% } %>
-  
+
   <%
   var title = page.title;
 
@@ -50,16 +48,14 @@
     <link rel="icon" href="<%- config.root %>css/images/favicon.ico">
   <% } %>
   <%- css('css/style') %>
-  <%- partial('google-analytics') %>
   
-  <!-- baidu webmaster push 查了一下,好像是百度拒绝外链的工具,暂时不用 -->
-  <!-- <script src='//push.zhanzhang.baidu.com/push.js'></script> -->
-  <!-- PWA manifest支持 -->
   <% if(theme.pwa) { %>
-    <link rel="manifest" href="/app.webmanifest" crossorigin="use-credentials">
+    <link rel="manifest" href="/pwa/app.webmanifest" crossorigin="use-credentials">
   <% } %>
+
   <% if(theme.scheme) { %>
     <%- css(theme.scheme) %>
   <% } %>
+
 
 </head>

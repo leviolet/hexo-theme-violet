@@ -20,11 +20,16 @@
 	
     <nav id="site-navigation" class="main-navigation" role="navigation">
             <button class="menu-toggle">菜单</button>
-            <!-- <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a> TODO-->
+            <!-- <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a>-->
             <div class="menu-main-container">
                 <ul id="menu-main" class="nav-menu">
-                <% for (var i in theme.menu){ %>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+                <% for (let i in theme.menu) { %>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                      <% if(theme.menu_icons[i]) { %>
+                        <img class="menu-icon" src="<%- url_for(theme.menu_icons[i]) %>" alt="menu-icon"></img>
+                      <% } %>
+                      <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+                    </li>
                 <% } %>
                 </ul>
             </div>
